@@ -32,7 +32,7 @@ main {
   right: 0%;
 }
 .container {
-  width: 70vw;
+  width: 80vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,8 +44,9 @@ main {
   grid-template-columns: repeat(2, 1fr);
 
   align-items: center;
-  grid-column-gap: 4vw;
+  grid-column-gap: 8vw;
   grid-row-gap: 8vh;
+  line-height: 1.5;
 }
 
 .heading-container {
@@ -53,9 +54,10 @@ main {
 }
 .heading {
   color: var(--Very-Dar-Magenta);
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 700;
   margin: 0;
+  line-height: 1;
 }
 .description {
   color: var(--Dark-Grayish-Magenta);
@@ -69,7 +71,7 @@ main {
 }
 .rating-background {
   background-color: var(--Light-Grayish-Magenta);
-  padding: 15px 50px;
+  padding: 15px 30px;
   border-radius: 8px;
   width: 350px;
   text-align: center;
@@ -114,16 +116,16 @@ main {
 .testimonial-content {
   justify-self: start;
   align-self: flex-end;
-  margin: 20px;
+  margin: 40px;
 }
 
 .buyer-image {
   border-radius: 50%;
-  max-width: 20%;
+  max-width: 18%;
   float: left;
   margin-right: 15px;
   position: relative;
-  top: 3px;
+  top: -7px;
 }
 
 .verBuyer {
