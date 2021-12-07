@@ -95,6 +95,7 @@ main {
   grid-column: 1/3;
   display: flex;
   justify-items: center;
+  align-items: center;
   gap: 2vw;
   height: 300px;
 }
@@ -102,6 +103,8 @@ main {
   border-radius: 8px;
   background-color: var(--Very-Dar-Magenta);
   max-width: 550px;
+  display: flex;
+  flex: 1 1 0px;
 }
 
 .testimonial-card1 {
@@ -114,9 +117,9 @@ main {
   align-self: flex-end;
 }
 .testimonial-content {
-  justify-self: start;
-  align-self: flex-end;
-  margin: 40px;
+  margin: 30px;
+  justify-items: center;
+  align-items: center;
 }
 
 .buyer-image {
@@ -125,7 +128,7 @@ main {
   float: left;
   margin-right: 15px;
   position: relative;
-  top: -7px;
+  top: -9px;
 }
 
 .verBuyer {
@@ -142,6 +145,8 @@ main {
 }
 
 .testimonial-description {
+  margin-top: 40px;
+  margin-bottom: 0;
   color: var(--White);
   font-size: 15px;
   font-weight: 400;
@@ -152,4 +157,25 @@ main {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  color: var(--Dark-Grayish-Magenta);
+  font-size: 12px;
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--Soft-Pink);
+}
+.attribution a:hover {
+  color: var(--Very-Dar-Magenta);
+}
+
+@media (max-width: 1200px) {
+  .testimonial-card1,
+  .testimonial-card2,
+  .testimonial-card3 {
+    align-self: stretch;
+    justify-items: center;
+  }
+  .testimonial-content {
+    margin: 35px;
+  }
 }
