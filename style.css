@@ -42,9 +42,9 @@ main {
     "heading-container rating"
     "testimonials testimonials";
   grid-template-columns: repeat(2, 1fr);
-  justify-items: stretch;
+
   align-items: center;
-  grid-column-gap: 9vw;
+  grid-column-gap: 4vw;
   grid-row-gap: 8vh;
 }
 
@@ -64,16 +64,20 @@ main {
   grid-column: 2/3;
   display: flex;
   flex-direction: column;
-  flex-grow: 2;
   gap: 20px;
+  font-size: 13px;
 }
 .rating-background {
   background-color: var(--Light-Grayish-Magenta);
   padding: 15px 50px;
   border-radius: 8px;
+  width: 350px;
+  text-align: center;
 }
 .rating-text {
   margin-left: 10px;
+  position: relative;
+  top: -2px;
 }
 .rating1 {
   align-self: flex-start;
