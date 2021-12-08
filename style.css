@@ -209,11 +209,9 @@ body {
     right: 0;
   }
 
-  .flex-wrapper {
-  }
   .container {
     min-width: 100%;
-    margin: 70px;
+    margin: 80px;
     grid-template-areas:
       "heading-container"
       "rating"
@@ -243,10 +241,5 @@ body {
     flex-direction: column;
     align-self: center;
     justify-self: center;
-  }
-
-  .attribution {
-    position: relative;
-    left: 40vh;
   }
 }
