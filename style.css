@@ -21,8 +21,6 @@ body {
   font-size: 15px;
   font-family: "Spartan", sans-serif;
 }
-main {
-}
 
 .bg-top-desktop {
   position: absolute;
@@ -35,18 +33,20 @@ main {
 .mobile-bg-images {
   display: none;
 }
+
+.flex-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container {
-  min-width: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 1200px;
   display: grid;
   grid-template-areas:
     "heading-container rating"
     "testimonials testimonials";
   grid-template-columns: repeat(2, 1fr);
-
   align-items: stretch;
   grid-column-gap: 8vw;
   grid-row-gap: 8vh;
@@ -208,15 +208,22 @@ main {
     bottom: 0;
     right: 0;
   }
+
+  .flex-wrapper {
+  }
   .container {
+    min-width: 100%;
+    margin: 70px;
     grid-template-areas:
       "heading-container"
       "rating"
       "testimonials testimonials";
     grid-template-columns: repeat(1, 1fr);
   }
+
   .heading-container {
     grid-column: 1/2;
+    text-align: center;
   }
   .rating {
     grid-column: 1/2;
@@ -225,11 +232,17 @@ main {
     display: block;
     line-height: 2;
   }
+  .rating1,
+  .rating2,
+  .rating3 {
+    align-self: center;
+  }
 
   .testimonials {
     grid-column: 1/2;
-
     flex-direction: column;
+    align-self: center;
+    justify-self: center;
   }
 
   .attribution {
